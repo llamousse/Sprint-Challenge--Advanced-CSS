@@ -10,20 +10,34 @@
       height: 100%;
       .center();
       flex-direction: column;
-  
+
       .logo-heading {
         font-size: 3.5rem;
+
+        @media @phone {
+          font-size: 4.1rem;
+          margin-top: 10px;
+        }
       }
   
       .nav {
         width: 350px;
         margin-top: 10px;
         .space-between();
+
+        @media @phone {
+          margin-top: 15px;
+          margin-bottom: 10px;
+        }
      
         a {
           font-size: 1.6rem;
           color: @main-font-color;
           text-decoration: none;
+
+          &:hover {
+            color: @nav-font;
+          }
         }
       }
     }

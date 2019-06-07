@@ -25,4 +25,15 @@
     color: @font-color;
     cursor: pointer;
     font-size: @font-size;
+
+    @media @phone {
+        width: 100%;
+        height: 70px;
+        margin-bottom: 20px;
+    }
+
+    &:hover {
+        background: @font-color;
+        color: @btn-bg-color;
+    }
 }

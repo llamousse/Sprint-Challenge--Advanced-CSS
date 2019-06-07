@@ -177,16 +177,31 @@ p {
 .main-navigation .nav-container .logo-heading {
   font-size: 3.5rem;
 }
+@media (max-width: 500px) {
+  .main-navigation .nav-container .logo-heading {
+    font-size: 4.1rem;
+    margin-top: 10px;
+  }
+}
 .main-navigation .nav-container .nav {
   width: 350px;
   margin-top: 10px;
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .main-navigation .nav-container .nav {
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+}
 .main-navigation .nav-container .nav a {
   font-size: 1.6rem;
   color: #5E6164;
   text-decoration: none;
+}
+.main-navigation .nav-container .nav a:hover {
+  color: #454A59;
 }
 footer {
   color: #22283B;
@@ -204,12 +219,21 @@ footer {
 .home .intro img {
   max-width: 100%;
   height: auto;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
 }
 .home .intro h2 {
   padding: 15px;
 }
 .home .intro p {
   padding: 0 15px;
+}
+@media (max-width: 500px) {
+  .home .intro p {
+    padding-left: 17px;
+    padding-right: 0;
+  }
 }
 .home .space-images {
   display: flex;
@@ -222,8 +246,27 @@ footer {
   border-radius: 20px;
   height: 100%;
 }
+@media (max-width: 500px) {
+  .home .space-images img {
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 15px;
+  }
+  .home .space-images img:nth-child(2) {
+    display: none;
+  }
+  .home .space-images img:nth-child(3) {
+    display: none;
+  }
+}
 .home .visit-planets {
   padding: 15px;
+}
+@media (max-width: 500px) {
+  .home .visit-planets {
+    margin-left: 1px;
+    margin-right: -18px;
+  }
 }
 .home .visit-planets h3 {
   margin-top: 11px;
@@ -238,8 +281,22 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .home .walk {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 10px 5px 0 18px;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+    margin-top: 20px;
+  }
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
@@ -261,12 +318,35 @@ footer {
   cursor: pointer;
   font-size: 1.8rem;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 100%;
+    height: 70px;
+    margin-bottom: 20px;
+  }
+}
+.home .walk .walk-text .btn:hover {
+  background: #F6F7F8;
+  color: #23293B;
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    margin-left: 0;
+    width: 100%;
+  }
 }
 .home .walk .walk-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img img {
+    margin-top: 10px;
+    margin-left: -5px;
+  }
 }
