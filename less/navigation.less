@@ -8,16 +8,8 @@
   
     .nav-container {
       height: 100%;
-      display: flex;
+      .center();
       flex-direction: column;
-      align-items: center;
-      justify-content: center;
-
-    // @media @mobile {
-    //     flex-wrap: wrap;
-    //     justify-content: center;
-    //     padding-top: 10px;
-    // }
   
       .logo-heading {
         font-size: 3.5rem;
@@ -26,10 +18,8 @@
       .nav {
         width: 350px;
         margin-top: 10px;
-        display: flex;
-        justify-content: space-between;
-  
-                
+        .space-between();
+     
         a {
           font-size: 1.6rem;
           color: @main-font-color;
